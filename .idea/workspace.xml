@@ -10,10 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f3d11e-3dc3-4144-9a85-f047669d866c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/interceptingFilter/UserAgentFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/interceptingFilter/UserAgentFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/badBrowser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/badBrowser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/frontcontroller/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/frontcontroller/CommandHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/frontcontroller/FrontController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/frontcontroller/FrontDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/frontcontroller/StudentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/frontcontroller/ViewStudentCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/viewStudentDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
       </list>
@@ -32,21 +36,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ritujane78"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ritujane78&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:ritujane78/intercepting_filter.git",
-    "accountId": "7043973b-b685-4893-9118-a2d048c6c6ca"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:ritujane78/intercepting_filter.git&quot;,
+    &quot;accountId&quot;: &quot;7043973b-b685-4893-9118-a2d048c6c6ca&quot;
   }
-}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -67,95 +71,100 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.25318169475815" />
-      <entry key="MS500" value="2.569478541140479" />
-      <entry key="S2" value="4.817032178855142" />
-      <entry key="S5" value="5.95219049189857" />
-      <entry key="S10" value="6.475214172383724" />
-      <entry key="S30" value="8.433764620002346" />
-      <entry key="S60" value="11.291144690584437" />
-      <entry key="M2" value="14.194705560924657" />
-      <entry key="M5" value="16.806215578234525" />
-      <entry key="M10" value="18.538222899232206" />
-      <entry key="M15" value="20.42447568260466" />
-      <entry key="M30" value="25.67436570422263" />
-      <entry key="H1" value="31.525969697727994" />
-      <entry key="H2" value="35.99846629699942" />
-      <entry key="H4" value="38.77801008407558" />
-      <entry key="D1" value="41.42932553700745" />
-      <entry key="W1" value="41.917608867413605" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000001111855958" />
+      <entry key="S10" value="1.0003460187542257" />
+      <entry key="S30" value="1.1375945214813439" />
+      <entry key="S60" value="1.9359980635529168" />
+      <entry key="M2" value="4.162447723368241" />
+      <entry key="M5" value="11.839859057279543" />
+      <entry key="M10" value="25.81575649157601" />
+      <entry key="M15" value="39.58729725158026" />
+      <entry key="M30" value="73.27655930445682" />
+      <entry key="H1" value="111.35961957425387" />
+      <entry key="H2" value="142.54612149272032" />
+      <entry key="H4" value="163.05352987527036" />
+      <entry key="D1" value="183.4866274310796" />
+      <entry key="W1" value="187.34581863137728" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.831839317312061E-222" />
-      <entry key="S2" value="4.424373906321576E-56" />
-      <entry key="S5" value="7.216734513445323E-23" />
-      <entry key="S10" value="8.495136557728381E-12" />
-      <entry key="S30" value="2.0404382434843345E-4" />
-      <entry key="S60" value="0.014284390933806936" />
-      <entry key="M2" value="0.11951788798120164" />
-      <entry key="M5" value="0.4432890976045467" />
-      <entry key="M10" value="1.2323829375080089" />
-      <entry key="M15" value="2.742676485823112" />
-      <entry key="M30" value="7.845625070986491" />
-      <entry key="H1" value="14.103277315901732" />
-      <entry key="H2" value="19.09907048509154" />
-      <entry key="H4" value="22.270694269746972" />
-      <entry key="D1" value="25.33568502381285" />
-      <entry key="W1" value="25.90399349034249" />
+      <entry key="MS500" value="6.90929149793553E-79" />
+      <entry key="S2" value="3.4746545027185135E-20" />
+      <entry key="S5" value="2.7089875221340363E-8" />
+      <entry key="S10" value="3.503117518328031E-4" />
+      <entry key="S30" value="0.272413802123386" />
+      <entry key="S60" value="1.5443249902228968" />
+      <entry key="M2" value="3.847227373855341" />
+      <entry key="M5" value="8.138331141874309" />
+      <entry key="M10" value="13.107891553684947" />
+      <entry key="M15" value="16.806749659047515" />
+      <entry key="M30" value="24.756334140972182" />
+      <entry key="H1" value="34.901194260164544" />
+      <entry key="H2" value="44.84958275635855" />
+      <entry key="H4" value="52.21312390373026" />
+      <entry key="D1" value="60.16457610276892" />
+      <entry key="W1" value="61.732241105191285" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1934576105170007" />
-      <entry key="MS500" value="2.5090405046833166" />
-      <entry key="S2" value="4.776898397714487" />
-      <entry key="S5" value="5.932051793960016" />
-      <entry key="S10" value="6.464254941880552" />
-      <entry key="S30" value="8.429085191703681" />
-      <entry key="S60" value="11.301454480297355" />
-      <entry key="M2" value="14.309244552137303" />
-      <entry key="M5" value="17.244161220730525" />
-      <entry key="M10" value="19.763731123343128" />
-      <entry key="M15" value="23.157140530329848" />
-      <entry key="M30" value="33.50583213835041" />
-      <entry key="H1" value="45.61657856382034" />
-      <entry key="H2" value="55.08897807944894" />
-      <entry key="H4" value="61.04372009268232" />
-      <entry key="D1" value="66.764066444216" />
-      <entry key="W1" value="67.82146448183197" />
+      <entry key="MS100" value="1.6441624542524193E-9" />
+      <entry key="MS500" value="0.017506081471783994" />
+      <entry key="S2" value="0.3637451709086893" />
+      <entry key="S5" value="0.6672966911534505" />
+      <entry key="S10" value="0.8174947734087118" />
+      <entry key="S30" value="1.3244723557128713" />
+      <entry key="S60" value="3.3874317091423713" />
+      <entry key="M2" value="7.91546834849846" />
+      <entry key="M5" value="19.895428600921562" />
+      <entry key="M10" value="38.84553824323925" />
+      <entry key="M15" value="56.32082043653811" />
+      <entry key="M30" value="97.97346257566825" />
+      <entry key="H1" value="146.21810759653778" />
+      <entry key="H2" value="187.36855784923395" />
+      <entry key="H4" value="215.25103942721097" />
+      <entry key="D1" value="243.6482443505564" />
+      <entry key="W1" value="249.07762709096002" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3Jfdn4cYGD5bLTFCHcZkHblrf5V" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Tomcat Server.Tomcat 10.1.60.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.60.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jane.servletdemo.frontcontroller" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationStatuses">
       <map>
@@ -225,6 +234,7 @@
       <option name="presentableId" value="Default" />
       <updated>1790056225471</updated>
       <workItem from="1790056228658" duration="4177000" />
+      <workItem from="1790075942233" duration="4065000" />
     </task>
     <servers />
   </component>

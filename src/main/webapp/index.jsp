@@ -9,5 +9,7 @@
 </h1>
 <br/>
 <a href="homeServlet">Home Servlet</a>
+<br>
+<a href="viewStudentDetails.do">View Student Details</a>
 </body>
 </html>
