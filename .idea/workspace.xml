@@ -1,17 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ServletDemo:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f3d11e-3dc3-4144-9a85-f047669d866c" name="Changes" comment="" />
+    <list default="true" id="43f3d11e-3dc3-4144-9a85-f047669d866c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/interceptingFilter/UserAgentFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jane/servletdemo/interceptingFilter/UserAgentFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/badBrowser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/badBrowser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ritujane78"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:ritujane78/intercepting_filter.git",
+    "accountId": "7043973b-b685-4893-9118-a2d048c6c6ca"
+  }
+}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -23,6 +64,65 @@
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.25318169475815" />
+      <entry key="MS500" value="2.569478541140479" />
+      <entry key="S2" value="4.817032178855142" />
+      <entry key="S5" value="5.95219049189857" />
+      <entry key="S10" value="6.475214172383724" />
+      <entry key="S30" value="8.433764620002346" />
+      <entry key="S60" value="11.291144690584437" />
+      <entry key="M2" value="14.194705560924657" />
+      <entry key="M5" value="16.806215578234525" />
+      <entry key="M10" value="18.538222899232206" />
+      <entry key="M15" value="20.42447568260466" />
+      <entry key="M30" value="25.67436570422263" />
+      <entry key="H1" value="31.525969697727994" />
+      <entry key="H2" value="35.99846629699942" />
+      <entry key="H4" value="38.77801008407558" />
+      <entry key="D1" value="41.42932553700745" />
+      <entry key="W1" value="41.917608867413605" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.831839317312061E-222" />
+      <entry key="S2" value="4.424373906321576E-56" />
+      <entry key="S5" value="7.216734513445323E-23" />
+      <entry key="S10" value="8.495136557728381E-12" />
+      <entry key="S30" value="2.0404382434843345E-4" />
+      <entry key="S60" value="0.014284390933806936" />
+      <entry key="M2" value="0.11951788798120164" />
+      <entry key="M5" value="0.4432890976045467" />
+      <entry key="M10" value="1.2323829375080089" />
+      <entry key="M15" value="2.742676485823112" />
+      <entry key="M30" value="7.845625070986491" />
+      <entry key="H1" value="14.103277315901732" />
+      <entry key="H2" value="19.09907048509154" />
+      <entry key="H4" value="22.270694269746972" />
+      <entry key="D1" value="25.33568502381285" />
+      <entry key="W1" value="25.90399349034249" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.1934576105170007" />
+      <entry key="MS500" value="2.5090405046833166" />
+      <entry key="S2" value="4.776898397714487" />
+      <entry key="S5" value="5.932051793960016" />
+      <entry key="S10" value="6.464254941880552" />
+      <entry key="S30" value="8.429085191703681" />
+      <entry key="S60" value="11.301454480297355" />
+      <entry key="M2" value="14.309244552137303" />
+      <entry key="M5" value="17.244161220730525" />
+      <entry key="M10" value="19.763731123343128" />
+      <entry key="M15" value="23.157140530329848" />
+      <entry key="M30" value="33.50583213835041" />
+      <entry key="H1" value="45.61657856382034" />
+      <entry key="H2" value="55.08897807944894" />
+      <entry key="H4" value="61.04372009268232" />
+      <entry key="D1" value="66.764066444216" />
+      <entry key="W1" value="67.82146448183197" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1,
@@ -38,17 +138,77 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Tomcat Server.Tomcat 10.1.60.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+          <value>
+            <map>
+              <entry key="Tomcat 10.1.60" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 10.1.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.60" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="ServletDemo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ServletDemo_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="37428fff-0eb6-4a2e-86ef-4cc974e48519" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ServletDemo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -64,7 +224,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1790056225471</updated>
-      <workItem from="1790056228658" duration="4000" />
+      <workItem from="1790056228658" duration="4177000" />
     </task>
     <servers />
   </component>
